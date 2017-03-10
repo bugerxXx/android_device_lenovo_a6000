@@ -225,12 +225,29 @@ int is2GB()
 }
 
 void init_target_properties()
- {
-     char modem_version[IMG_VER_BUF_LEN];
-     int rc;
+{
+    char modem_version[IMG_VER_BUF_LEN];
+    int rc;
     std::string product = property_get("ro.product.name");
     if ((strstr(product.c_str(), "a6000") == NULL))
-     return;
+    return;
+
+    struct sysinfo sys;
+
+    sysinfo(&sys);
+
+    if (sys.totalram < 2048ull * 1024 * 1024) {
+        property_set("ro.build.product", "Lenovo");
+        property_set("ro.product.device", "A6000");
+        property_set("ro.product.model", "Lenovo A6000");
+        property_set("ro.product.name", "Lenovo A6000");
+    } else {
+        property_set("ro.build.product", "Lenovo");
+        property_set("ro.product.device", "A6000 Plus");
+        property_set("ro.product.model", "Lenovo A6000 Plus");
+        property_set("ro.product.name", "Lenovo A6000 Plus");
+    }
+
     rc = get_img_version(modem_version, IMG_VER_BUF_LEN);
     if (!rc) {
         property_set("gsm.version.baseband", modem_version);
