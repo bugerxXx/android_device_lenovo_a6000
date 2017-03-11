@@ -20,8 +20,8 @@ set -e
 export INITIAL_COPYRIGHT_YEAR=2015
 
 # Required!
-DEVICE=crackling
-VENDOR=wileyfox
+DEVICE=a6000
+VENDOR=lenovo
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

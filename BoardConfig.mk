@@ -13,11 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+FORCE_32_BIT := true
+
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-include device/wileyfox/crackling/board/*.mk
-
-TARGET_BOARD_INFO_FILE := device/wileyfox/crackling/board-info.txt
+include device/lenovo/a6000/board/*.mk
 
 # inherit from proprietary files
--include vendor/wileyfox/crackling/BoardConfigVendor.mk
+-include vendor/lenovo/a6000/BoardConfigVendor.mk

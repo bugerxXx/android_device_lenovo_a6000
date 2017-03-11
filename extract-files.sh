@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=crackling
-VENDOR=wileyfox
+DEVICE=a6000
+VENDOR=lenovo
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
