@@ -17,9 +17,6 @@ endif
 
 LOCAL_CFLAGS += -D_ANDROID_
 
-LOCAL_CLANG_CFLAGS += \
-        -Wno-error=enum-conversion
-
 LOCAL_SRC_FILES:= \
         src/mm_qcamera_main_menu.c \
         src/mm_qcamera_app.c \
@@ -122,9 +119,6 @@ LOCAL_CFLAGS += -DUSE_ION
 endif
 
 LOCAL_CFLAGS += -D_ANDROID_
-
-LOCAL_CLANG_CFLAGS += \
-        -Wno-error=enum-conversion
 
 LOCAL_SRC_FILES:= \
         src/mm_qcamera_main_menu.c \
