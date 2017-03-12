@@ -20,16 +20,11 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := Kraft-T,a6000,K30-T,A6000,Kraft-W,Kraft-C,k30t,msm8916,Kraft-A6000,wt86518
+
 PRODUCT_NAME := lineage_a6000
 BOARD_VENDOR := lenovo
 PRODUCT_DEVICE := a6000
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
-
-PRODUCT_MANUFACTURER := Lenovo
-PRODUCT_MODEL := Lenovo A6000
-
-PRODUCT_BRAND := Lenovo
-TARGET_VENDOR := lenovo
-TARGET_VENDOR_PRODUCT_NAME := A6000
-TARGET_VENDOR_DEVICE_NAME := a6000
