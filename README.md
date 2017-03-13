@@ -1,4 +1,4 @@
-# Device configuration for Wileyfox Swift
+# Device configuration for Lenovo A6000
 
 ## Spec Sheet
 
@@ -7,19 +7,19 @@
 | CPU                     | Quad-core 1.2 GHz ARM® Cortex™ A53|
 | Chipset                 | Qualcomm MSM8916 Snapdragon 410   |
 | GPU                     | Adreno 306                        |
-| Memory                  | 2 GB                              |
-| Shipped Android Version | 5.1.1                             |
-| Storage                 | 16 GB                             |
-| MicroSD                 | Up to 128 GB                      |
-| Battery                 | 2500 mAh (removable)              |
+| Memory                  | 1/2 GB                            |
+| Shipped Android Version | 4.4.4                             |
+| Storage                 | 8/16 GB                           |
+| MicroSD                 | Up to 32 GB                       |
+| Battery                 | 2300 mAh (removable)              |
 | Dimensions              | 71 x 141,15 x 9,36 mm             |
 | Display                 | 720 x 1280 pixels, 5.0" IPS LCD   |
-| Rear Camera             | 13 MP, LED flash                  |
-| Front Camera            | 5 MP                              |
+| Rear Camera             | 8 MP, LED flash                   |
+| Front Camera            | 2 MP                              |
 
 ## Device Picture
 
-![Wileyfox Swift](http://s.4pda.to/YstumqO2cI57cw7o9jBDUMREsvGDbWqz0jTna7xTz2z1jqJHnONSI.jpg "Wileyfox Swift")
+![lenovo a6000](http://img6a.flixcart.com/image/mobile/r/z/z/lenovo-a6000-plus-a6000-plus-400x400-imae6jegmgumrzzs.jpeg)
 
 ## Copyright
 
