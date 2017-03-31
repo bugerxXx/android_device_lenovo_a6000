@@ -186,12 +186,26 @@ void init_target_properties()
         ERROR("Detected modem version=%s\n", modem_version);
 }
 
+    /*A6000 Plus*/
+    if (is2GB()) {
+	property_set("ro.build.product", "Kraft-A6000-s");
+        property_set("ro.product.device", "Kraft-A6000-s");
+        property_set("ro.product.model", "Lenovo A6000 Plus");
+        property_set("ro.product.name", "Kraft-A6000-s");
+    }
+    /*A6000*/
+    else {
+	property_set("ro.build.product", "Kraft-A6000");
+        property_set("ro.product.device", "Kraft-A6000");
+        property_set("ro.product.model", "Lenovo A6000");
+        property_set("ro.product.name", "Kraft-A6000");
+    }
+
     property_set("dalvik.vm.heapstartsize", "8m");
     property_set("dalvik.vm.heapgrowthlimit", is2GB() ? "192m" : "96m");
     property_set("dalvik.vm.heapsize", is2GB() ? "512m" : "256m");
     property_set("dalvik.vm.heaptargetutilization", "0.75");
     property_set("dalvik.vm.heapminfree", is2GB() ? "512k" : "2m");
     property_set("dalvik.vm.heapmaxfree", "8m");
-    property_set("ro.product.model", is2GB() ? "Lenovo A6000 Plus" : "Lenovo A6000");
 
 }
