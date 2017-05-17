@@ -241,4 +241,6 @@
     <!-- enabling WifiDisplay(Miracast Source)-->
     <bool name="config_enableWifiDisplay">true</bool>
 
+    <bool name="config_uiBlurEnabled">true</bool>
+
 </resources>
